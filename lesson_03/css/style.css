@@ -1,0 +1,44 @@
+@import url("reset.css");
+
+.header {}
+
+.container {}
+
+.title,
+.item {
+    color: blue;
+}
+
+.image {}
+
+.sub-title {
+    color: orange;
+}
+
+.sub-title span {
+    color: red;
+}
+
+.list {}
+
+.item-green {
+    color: green;
+}
+
+main .item {
+    color: brown;
+}
+
+.link {}
+
+.main {}
+
+.footer {}
+
+#end [target*="_blank"] {
+    color: yellowgreen;
+}
+
+#kharkiv {
+    color: cornflowerblue;
+}
