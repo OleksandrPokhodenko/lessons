@@ -9,19 +9,21 @@
 @import url("reset.css");
 
 body {
-    font-family: Cormorant, serif;
-    font-weight: 600;
-    color: #05336f;
-    font-size: 24px;
+    font-family: ICTV, sans-serif;
+    font-weight: 400;
+    color: #434b57;
+    line-height: 1.5;
+    /* 24/16 */
 }
 
 .header {}
 
 .header__title {
     font-family: "Academia Libera", serif;
-    font-size: 30px;
-    line-height: 1.33;
-    /* 40/30 */
+    color: #05336f;
+    font-size: 40px;
+    line-height: 1.5;
+    /* 60/40 */
     text-align: center;
     word-spacing: 10px;
     text-shadow: 1px 1px 3px #05336f;
@@ -30,10 +32,12 @@ body {
 .header__title span {
     text-decoration: underline;
     text-decoration-style: dashed;
-    text-underline-offset: 5px;
+    text-underline-offset: 10px;
 }
 
 .header__subtitle {
+    color: #05336f;
+    font-weight: 700;
     font-size: 24px;
     line-height: 1.46;
     /* 35/24 */
@@ -46,32 +50,34 @@ body {
 
 .main__title {
     font-family: "Academia Libera", serif;
-    color: #556070;
-    font-size: 20px;
+    color: #05336f;
+    font-size: 24px;
     text-align: right;
-    line-height: 1.5;
-    /* 30/20 */
+    line-height: 1.67;
+    /* 40/24 */
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 3px #000;
 }
 
-.main__text {
-    color: #434b57;
-}
+.main__text {}
 
 .main span {
     text-decoration: underline;
     text-decoration-color: #132238;
+    color: #05336f;
 }
 
 .footer {}
 
 .footer__title {
     font-family: "Academia Libera", serif;
-    font-size: 20px;
-    line-height: 1.5;
-    /* 30/20 */
+    color: #05336f;
+    font-size: 24px;
+    line-height: 1.67;
+    /* 40/24 */
     text-transform: capitalize;
+    text-shadow: 2px 2px 3px #000;
 }
 
 .footer__text {}
@@ -79,7 +85,7 @@ body {
 
 /* -------------------------------------------------------------------------------------------------------------- */
 .container-about-us {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
 }
 
 .container-about-us__title {
@@ -103,7 +109,7 @@ body {
 }
 
 .container-professional-designer {
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;
 }
 
 .container-professional-designer__title {
@@ -128,7 +134,7 @@ body {
 }
 
 .container-introduce-your-product {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 .container-introduce-your-product__title {
