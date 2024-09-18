@@ -6,14 +6,13 @@
 
 @import url("fonts.css");
 
-@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,700&display=swap");
-
 @import url("reset.css");
 
 body {
     font-family: Cormorant, serif;
     font-weight: 600;
     color: #05336f;
+    font-size: 18px;
 }
 
 .header {}
