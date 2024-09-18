@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap");
+
+@import url("fonts.css");
+
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,700&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: Cormorant, serif;
+    font-weight: 600;
+    color: #05336f;
+}
+
+.header {}
+
+.header__title {
+    font-family: "Academia Libera", serif;
+    font-size: 30px;
+    line-height: 1.33;
+    /* 40/30 */
+    text-align: center;
+    word-spacing: 10px;
+    text-shadow: 1px 1px 3px #05336f;
+}
+
+.header__title span {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+}
+
+.header__subtitle {
+    font-size: 24px;
+    line-height: 1.46;
+    /* 35/24 */
+    text-align: center;
+}
+
+.header__text {}
+
+.main {}
+
+.main__title {
+    font-family: "Academia Libera", serif;
+    color: #556070;
+    font-size: 20px;
+    text-align: right;
+    line-height: 1.5;
+    /* 30/20 */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main__text {
+    color: #434b57;
+}
+
+.main span {
+    text-decoration: underline;
+    text-decoration-color: #132238;
+}
+
+.footer {}
+
+.footer__title {
+    font-family: "Academia Libera", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    /* 30/20 */
+    text-transform: capitalize;
+}
+
+.footer__text {}
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.container-about-us {
+    font-family: "DM Sans";
+}
+
+.container-about-us__title {
+    color: var(--Neutral-Colors-Color-800, #1E1B39);
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 1.08;
+    /* 95/88 */
+    text-decoration-line: line-through;
+    text-decoration-color: #05336f;
+    text-shadow: 4px 4px 10px #1E1B39;
+    text-transform: lowercase;
+}
+
+.container-about-us__item {
+    color: var(--Neutral-Colors-Neutral-700, #474464);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.75;
+    /* 42/24 */
+}
+
+.container-professional-designer {
+    font-family: "Work Sans";
+}
+
+.container-professional-designer__title {
+    color: var(--Gray-900, #132238);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.32;
+    /* 50/38 */
+    white-space: nowrap;
+}
+
+.container-professional-designer__title span {
+    text-decoration: overline;
+}
+
+.container-professional-designer__item {
+    color: var(--Gray-600, #556070);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    /* 24/18 */
+}
+
+.container-introduce-your-product {
+    font-family: Roboto;
+}
+
+.container-introduce-your-product__title {
+    color: var(--Colour-Main-Blue-900, #091133);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32;
+    /* 66/50 */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px #000;
+    text-align: right;
+}
+
+.container-introduce-your-product__title span {
+    text-decoration: underline;
+    text-decoration-color: #434b57;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+.container-introduce-your-product__item {
+    color: var(--Colour-Main-Blue-500, #505F98);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    /* 30/18 */
+    text-align: justify;
+}
