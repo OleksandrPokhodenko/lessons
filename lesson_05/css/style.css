@@ -87,7 +87,7 @@ body {
 }
 
 .main-visible {
-    max-height: 90px;
+    max-height: 125px;
     overflow: hidden;
 }
 
