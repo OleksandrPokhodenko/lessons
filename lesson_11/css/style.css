@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,500,700,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap");
+
+@import url("reset.css");
+
+body {
+    font-family: Epilogue, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.header {}
+
+.header__container {}
+
+[class*="__container"] {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__title {
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 1.44;
+    /* 52/36 */
+    color: rgb(6, 35, 88);
+    padding: 20px 0;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.header__title:hover {
+    background-color: aquamarine;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.page {}
+
+.training-block {}
+
+.training-block__container {}
+
+.training-block__body {
+    font-size: 0;
+    margin: 0 -20px;
+}
+
+.training-block__element {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.training-block__inner {
+    background-color: rgba(128, 128, 128, 0.675);
+    border-radius: 20px;
+    perspective: 300px;
+    perspective-origin: center;
+}
+
+.training-block__item {
+    height: 270px;
+    width: 270px;
+    background-color: #4cb0de;
+    border-radius: 20px;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    line-height: 1.5;
+    /* 45/30 */
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.training-block__span {
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.training-block__item--translate:hover {
+    transform: translate(-40px, -30%);
+    /* translate: -40px -30%; */
+    box-shadow: 5px 5px 10px #000;
+}
+
+.training-block__inner:hover .training-block__item--scale {
+    transform: scale(0.5, 0.5);
+    /* scale: 0.5 0.5; */
+    box-shadow: 0 0 20px #000;
+}
+
+.training-block__inner:hover .training-block__item--rotate {
+    transform: rotate(-180deg);
+    /* rotate: -180deg; */
+    box-shadow: 0 0 20px #000;
+}
+
+.training-block__inner:hover .training-block__item--skew {
+    transform: skew(15deg, 10deg);
+    box-shadow: 5px 5px 10px #000;
+}
+
+.training-block__inner:hover .training-block__item--origin {
+    transform-origin: top;
+    rotate: 15deg;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.training-block__inner:hover .training-block__item--perspective {
+    transform: rotateX(30deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.training-block__inner:hover .training-block__item--rotate-scale {
+    transform: rotate(360deg) scale(0);
+}
+
+.training-block__inner:hover .training-block__item--origin-scale {
+    transform: scale(0);
+    transform-origin: 260px 10px;
+}
+
+.training-block__inner:hover .training-block__item--transform3d {
+    transform: translate3d(-20px, -20px, 20px);
+    box-shadow: 5px 5px 10px #000;
+}
+
+.training-block__inner:hover .training-block__item--scale3d {
+    transform: scale3d(1.15, 1.15, 1.2);
+    box-shadow: 0 0 20px #000;
+}
+
+.training-block__inner:hover .training-block__item--rotate3d {
+    transform: rotate3d(20, 70, 30, 70deg);
+}
+
+.training-block__inner--transform-style {
+    transform-style: preserve-3d;
+}
+
+.training-block__inner:hover .training-block__item--transform-style {
+    transform: rotateX(40deg);
+}
+
+.training-block__inner--test {
+    transform-style: preserve-3d;
+}
+
+.training-block__dollar {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.training-block__body-dollar {
+    display: inline-block;
+    perspective: 1000px;
+    position: relative;
+}
+
+.training-block__dollar-revers {
+    border: 2px solid grey;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.training-block__dollar-avers {
+    border: 2px solid grey;
+    transition: all 0.5s;
+    transform: rotateY(0deg);
+}
+
+.training-block__avers-img {
+    width: 100%;
+}
+
+.training-block__revers-img {
+    width: 100%;
+}
+
+.training-block__body-dollar:hover .training-block__dollar-revers {
+    transform: rotateY(0deg);
+}
+
+.training-block__body-dollar:hover .training-block__dollar-avers {
+    transform: rotateY(-180deg);
+}
+
+.block-car {}
+
+.block-car--position {
+    position: relative;
+}
+
+.block-car__img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+.block-car__container {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    right: 100px;
+}
+
+.block-car__body {
+    padding: 0 25px 20px 25px;
+}
+
+.car {
+    font-size: 0;
+    perspective: 800px;
+}
+
+.car__body {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.car__cab {
+    width: 277px;
+    height: 167px;
+    display: inline-block;
+    margin-right: 56px;
+    vertical-align: top;
+    position: relative;
+}
+
+.cab {}
+
+.cab__element-1 {
+    width: 129px;
+    height: 33px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 85% 15% 0% 100% / 100% 0% 100% 0%;
+    background: linear-gradient(30deg, rgba(88, 88, 92, 1) 7%, rgba(13, 12, 12, 1) 49%, rgba(47, 45, 47, 1) 95%);
+}
+
+.cab__element-2 {
+    width: 163px;
+    height: 44px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 33px;
+    right: 0;
+    border-radius: 25% 75% 0% 100% / 100% 0% 100% 0%;
+    background: linear-gradient(30deg, rgba(90, 90, 92, 1) 13%, rgba(18, 17, 17, 1) 49%, rgba(50, 47, 47, 1) 82%);
+}
+
+.cab__element-3 {
+    width: 98px;
+    height: 54px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 113px;
+    left: 0;
+    border-radius: 82% 18% 0% 100% / 100% 0% 100% 0%;
+    background: linear-gradient(30deg, rgba(65, 65, 66, 1) 21%, rgba(3, 2, 2, 1) 49%, rgba(70, 67, 67, 1) 84%);
+}
+
+.cab__element-4 {
+    width: 123px;
+    height: 91px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 76px;
+    right: 0;
+    background: linear-gradient(90deg, rgba(76, 76, 82, 1) 13%, rgba(52, 48, 48, 1) 49%, rgba(37, 35, 37, 1) 82%);
+}
+
+.cab__element-5 {
+    width: 41px;
+    height: 31px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 83px;
+    right: 130px;
+    border-radius: 47% 53% 0% 100% / 100% 0% 100% 0%;
+    background-color: #b4b4b4;
+    z-index: 2;
+    transition: all 0.8s;
+}
+
+.cab__element-5:hover {
+    transform: translate(0, 31px);
+}
+
+.cab__element-6 {
+    width: 57px;
+    height: 38px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 76px;
+    right: 122px;
+    background-color: rgb(52, 52, 52);
+    border-radius: 41% 59% 0% 100% / 100% 0% 100% 0%;
+}
+
+.car__cab::before {
+    content: "";
+    width: 35px;
+    height: 4px;
+    background-color: #b4b4b4;
+    position: absolute;
+    top: 94px;
+    left: 85px;
+    transform: rotate(-68deg);
+    z-index: 2;
+    border-radius: 15px 15px 0 0;
+}
+
+.car__cab::after {
+    content: "";
+    width: 23px;
+    height: 4px;
+    background-color: #b4b4b4;
+    position: absolute;
+    top: 128px;
+    left: 124px;
+    z-index: 4;
+    border-radius: 10px;
+}
+
+.cab__element-7 {
+    width: 58px;
+    height: 54px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 113px;
+    right: 122px;
+    z-index: 3;
+    background: linear-gradient(270deg, rgba(76, 76, 82, 1) 13%, rgba(52, 48, 48, 1) 49%, rgba(37, 35, 37, 1) 82%);
+}
+
+.cab__element-8 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 83px;
+    right: 40px;
+    background-color: rgb(32, 31, 31);
+    border-radius: 5px;
+}
+
+.cab__element-9 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 124px;
+    right: 40px;
+    background-color: rgb(32, 31, 31);
+    border-radius: 5px;
+}
+
+.cab__element-10 {
+    width: 18px;
+    height: 149px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 8px;
+    right: -18px;
+    background-color: rgb(0, 0, 0);
+}
+
+.cab__element-11 {
+    position: absolute;
+    width: 4px;
+    height: 24px;
+    background-color: grey;
+    top: 106px;
+    left: 18px;
+    transform: rotate(-39deg);
+}
+
+.cab__element-12 {
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    background-color: grey;
+    top: 109px;
+    left: 51px;
+    transform: rotate(3deg);
+}
+
+.cab__element-13 {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    background-color: rgb(67, 67, 67);
+    top: 98px;
+    left: 8px;
+    border-radius: 100% 0% 100% 0% / 78% 100% 0% 22%;
+    border: 1px solid #323131;
+}
+
+.cab__element-14 {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    background-color: rgb(67, 67, 67);
+    top: 98px;
+    left: 46px;
+    border-radius: 100% 0% 100% 0% / 78% 100% 0% 22%;
+    border: 1px solid #323131;
+}
+
+.cab__element-15 {
+    position: absolute;
+    top: 153px;
+    left: -2px;
+    width: 5px;
+    height: 13px;
+    background-color: rgb(229, 226, 226);
+    border-radius: 5px 0 0 5px;
+}
+
+.cab__element-15:hover {
+    background-color: aliceblue;
+    box-shadow:
+        0px 0.4px 6.3px aliceblue,
+        0px 0.9px 13.8px aliceblue,
+        0px 1.4px 23.2px aliceblue,
+        0px 2.2px 35px aliceblue,
+        0px 3.1px 50.5px aliceblue,
+        0px 4.4px 71.4px aliceblue,
+        0px 6.3px 101.3px aliceblue,
+        0px 9.1px 147.1px aliceblue,
+        0px 14.1px 226.7px aliceblue,
+        0px 25px 403px aliceblue;
+}
+
+.cab__element-16 {
+    position: absolute;
+    top: 155px;
+    left: 24px;
+    width: 13px;
+    height: 6px;
+    background-color: rgb(187, 67, 15);
+    border-radius: 5px;
+}
+
+.cab__element-16:hover {
+    background-color: rgb(255, 104, 3);
+    box-shadow:
+        0px 0.4px 6.3px rgb(255, 104, 3),
+        0px 0.9px 13.8px rgb(255, 104, 3),
+        0px 1.4px 23.2px rgb(255, 104, 3),
+        0px 2.2px 35px rgb(255, 104, 3),
+        0px 3.1px 50.5px rgb(255, 104, 3),
+        0px 4.4px 71.4px rgb(255, 104, 3),
+        0px 6.3px 101.3px rgb(255, 104, 3),
+        0px 9.1px 147.1px rgb(255, 104, 3),
+        0px 14.1px 226.7px rgb(255, 104, 3),
+        0px 25px 403px rgb(255, 104, 3);
+}
+
+.car__trailer {
+    padding: 8px 8px 0 8px;
+    width: 812px;
+    height: 167px;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(218, 102, 102, 1) 12%, rgba(230, 43, 43, 1) 47%, rgba(232, 0, 0, 1) 84%);
+    position: relative;
+}
+
+.trailer {}
+
+.trailer__element-1 {
+    position: absolute;
+    top: 5px;
+    left: -11px;
+    width: 11px;
+    height: 120px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.trailer__element-2 {
+    position: absolute;
+    top: 151px;
+    left: 812px;
+    width: 5px;
+    height: 15px;
+    background-color: rgb(186, 4, 4);
+    border-radius: 0 5px 5px 0;
+}
+
+.trailer__element-2:hover {
+    background-color: rgb(255, 2, 2);
+    box-shadow:
+        0px 0.4px 6.3px rgb(255, 2, 2),
+        0px 0.9px 13.8px rgb(255, 2, 2),
+        0px 1.4px 23.2px rgb(255, 2, 2),
+        0px 2.2px 35px rgb(255, 2, 2),
+        0px 3.1px 50.5px rgb(255, 2, 2),
+        0px 4.4px 71.4px rgb(255, 2, 2),
+        0px 6.3px 101.3px rgb(255, 2, 2),
+        0px 9.1px 147.1px rgb(255, 2, 2),
+        0px 14.1px 226.7px rgb(255, 2, 2),
+        0px 25px 403px rgb(255, 2, 2);
+}
+
+.trailer__border {
+    height: 157px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 6px dashed #fff;
+}
+
+.trailer__border span {
+    font-family: "Dancing Script", serif;
+    font-size: 110px;
+    text-align: center;
+    line-height: 1.27;
+    /* 140/110 */
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.chassis {}
+
+.car__chassis {
+    width: 1145px;
+    height: 63px;
+    position: relative;
+}
+
+.chassis__element-2:hover {
+    transform: rotate(-360deg);
+}
+
+.chassis__element-1:hover {
+    transform: rotate(-360deg);
+}
+
+.chassis__element-1 {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(90, 90, 92, 1) 21%, rgba(3, 2, 2, 1) 49%, rgba(91, 87, 87, 1) 73%);
+    position: absolute;
+    top: 7px;
+    left: 29px;
+    z-index: 3;
+    transition: all 0.8s;
+}
+
+.chassis__element-2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 7px dotted #000;
+    background: #4a4a4a;
+    position: absolute;
+    top: 19px;
+    left: 42px;
+    z-index: 4;
+    transition: all 0.8s;
+}
+
+.chassis__element-1-2 {
+    left: 307px;
+}
+
+.chassis__element-2-2 {
+    left: 320px;
+}
+
+.chassis__element-1-3 {
+    left: 381px;
+}
+
+.chassis__element-2-3 {
+    left: 394px;
+}
+
+.chassis__element-1-4 {
+    left: 853px;
+}
+
+.chassis__element-2-4 {
+    left: 866px;
+}
+
+.chassis__element-1-5 {
+    left: 916px;
+}
+
+.chassis__element-2-5 {
+    left: 929px;
+}
+
+.chassis__element-1-6 {
+    left: 980px;
+}
+
+.chassis__element-2-6 {
+    left: 993px;
+}
+
+.chassis__element-3 {
+    position: absolute;
+    width: 226px;
+    height: 36px;
+    border: 1px solid #000;
+    top: 3px;
+    left: 600px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(221, 30, 30, 1) 12%, rgba(230, 43, 43, 1) 47%, rgba(230, 64, 64, 1) 84%);
+}
+
+.chassis__element-4 {
+    position: absolute;
+    width: 191px;
+    height: 42px;
+    background-color: #000;
+    top: 3px;
+    left: 848px;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+}
+
+.chassis__element-5 {
+    position: absolute;
+    width: 68px;
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    left: 23px;
+    border-radius: 25px 25px 0 0;
+    z-index: 2;
+}
+
+.chassis__element-6 {
+    width: 277px;
+    height: 46px;
+    background: linear-gradient(90deg, rgba(90, 90, 92, 1) 13%, rgba(56, 54, 54, 1) 49%, rgba(50, 47, 47, 1) 82%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.chassis__element-7 {
+    position: absolute;
+    width: 191px;
+    height: 30px;
+    background-color: #000;
+    top: 6px;
+    left: 276px;
+    border-radius: 0 5px 5px 0;
+    z-index: 1;
+}
+
+.chassis__element-8 {
+    position: absolute;
+    width: 38px;
+    height: 6px;
+    background-color: #000;
+    top: 0;
+    left: 390px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.chassis__element-9 {
+    width: 182px;
+    height: 5px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 852px;
+    z-index: 1;
+}
+
+.chassis__element-10 {
+    width: 5px;
+    height: 45px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 909px;
+    z-index: 1;
+}
+
+.chassis__element-11 {
+    width: 5px;
+    height: 45px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 973px;
+    z-index: 1;
+}
+
+.chassis__element-12 {
+    width: 6px;
+    height: 45px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 846px;
+    z-index: 1;
+    transform: rotate(11deg);
+}
+
+.chassis__element-13 {
+    width: 6px;
+    height: 45px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 1035px;
+    z-index: 1;
+    transform: rotate(-11deg);
+}
+
+.chassis__element-14 {
+    width: 18px;
+    height: 4px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 778px;
+}
+
+.chassis__element-15 {
+    width: 18px;
+    height: 4px;
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 626px;
+}
+
+.chassis__element-16 {
+    width: 20px;
+    height: 20px;
+    background: #4a4a4a;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 1125px;
+}
+
+.block-car__shadow {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 5px;
+    background-color: #3231314b;
+    border-radius: 20px;
+    height: 30px;
+    transform: rotateX(90deg);
+}
+
+.footer {}
+
+.footer__block {}
+
+.footer__container {}
+
+.footer__body {
+    text-align: center;
+}
+
+.footer__link {}
+
+.footer__title {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(82, 82, 82);
+}
