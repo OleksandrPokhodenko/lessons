@@ -100,6 +100,12 @@ body {
     text-transform: capitalize;
 }
 
+.content-header__link {}
+
+.content-header__link:hover {
+    color: #fff;
+}
+
 .content-header__sup {
     font-size: 14px;
     width: 14px;
@@ -377,9 +383,6 @@ body {
     z-index: 4;
 }
 
-/* .get-started-block__card img {
-    width: 100%;
-} */
 
 .get-started-block__image {
     width: 239px;
@@ -394,8 +397,8 @@ body {
 }
 
 .get-started-block__image img {
-    width: 239px;
-    height: 396px;
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: 5;
 }
@@ -599,7 +602,7 @@ body {
     margin-bottom: 26px;
 }
 
-.our-team-block__img {
+.our-team-block__wrapper {
     width: 270px;
     height: 272px;
     border-radius: 6px;
@@ -608,8 +611,9 @@ body {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-
 }
+
+.our-team-block__img {}
 
 .our-team-block__img:hover img {
     transform: scale(1.1);
@@ -617,22 +621,30 @@ body {
 }
 
 .our-team-block__img img {
-    width: 196px;
-    height: 247px;
     transition: transform ease 0.5s;
 }
 
-.our-team-block__img--roelof img {
+.our-team-block__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.our-team-block__img--azah {
+    width: 196px;
+    height: 247px;
+}
+
+.our-team-block__img--roelof {
     width: 259px;
     height: 232px;
 }
 
-.our-team-block__img--leonardo img {
+.our-team-block__img--leonardo {
     width: 205px;
     height: 238px;
 }
 
-.our-team-block__img--izabella img {
+.our-team-block__img--izabella {
     width: 230px;
     height: 233px;
 }
@@ -700,6 +712,33 @@ body {
     gap: 130px;
 }
 
+.founder-words-block__wrapper {
+    background: url("../img/man-with-glasses-bacground.webp") center / 570px 448px no-repeat;
+    flex-basis: 570px;
+    height: 448px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.founder-words-block__img {
+    width: 470px;
+    height: 420px;
+}
+
+.founder-words-block__img img {
+    width: 100%;
+    height: 100%;
+    transition: transform ease 0.5s;
+}
+
+.founder-words-block__img:hover img {
+    transform: scale(1.1);
+}
+
 .founder-words-block__info {
     display: flex;
     flex-direction: column;
@@ -734,30 +773,6 @@ body {
     position: relative;
     z-index: 2;
 }
-
-.founder-words-block__img {
-    background: url("../img/man-with-glasses-bacground.webp") center / 570px 448px no-repeat;
-    flex-basis: 570px;
-    height: 448px;
-    border-radius: 6px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-}
-
-.founder-words-block__img img {
-    width: 470px;
-    height: 420px;
-    transition: transform ease 0.5s;
-}
-
-.founder-words-block__img:hover img {
-    transform: scale(1.1);
-}
-
-.founder-words-block__info {}
 
 .content-header__name {
     color: #fff;
