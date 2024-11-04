@@ -514,11 +514,11 @@ body {
     color: rgba(255, 255, 255, 0.64);
     line-height: 2;
     /* 32/16 */
+    flex-grow: 1;
 }
 
 .card__text:not(:last-child) {
     margin-bottom: 26px;
-    flex-grow: 1;
 }
 
 .card__link {
