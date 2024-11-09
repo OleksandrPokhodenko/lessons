@@ -40,6 +40,8 @@ body {
     flex-grow: 1;
 }
 
+.page__container {}
+
 .page>*:not(:last-child) {
     margin-bottom: 50px;
 }
