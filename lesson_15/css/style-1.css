@@ -220,7 +220,7 @@ body {
     align-items: center;
 }
 
-.dark-block__stars-body {
+.dark-block__body-stars {
     display: flex;
     gap: 2px;
     text-align: center;
@@ -332,7 +332,7 @@ body {
 
 /* ----------@media--------------------------------------------------------------- */
 
-@media(max-width:1250px) {
+@media(max-width:1330px) {
     .dark-block__cards-block {
         flex-wrap: wrap;
         justify-content: center;
