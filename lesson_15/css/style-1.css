@@ -306,14 +306,15 @@ body {
 
 .dark-block__box--multicard {}
 
-.dark-block__row {
+.dark-block__images {
     display: flex;
     flex-basis: 215.6px;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .dark-block__img--multicard {
-    max-width: 49%;
+    max-width: 48%;
 }
 
 .dark-block__span--multicard {
@@ -402,7 +403,6 @@ body {
         margin-bottom: 50px;
     }
 }
-
 
 /* ----------footer--------------------------------------------------------------- */
 
