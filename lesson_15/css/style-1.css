@@ -15,10 +15,14 @@ body {
 
 .header {}
 
-.header__container {
+.header__container {}
+
+.header__body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
+    padding: 10px 0;
 }
 
 [class*="__container"] {
@@ -53,13 +57,9 @@ body {
     }
 }
 
-@media(max-width: 900px) {
-    .header__link {
-        display: none;
-    }
-
-    .header__container {
-        justify-content: center;
+@media(max-width: 410px) {
+    .header__body {
+        flex-direction: column;
     }
 }
 
