@@ -208,7 +208,7 @@ body {
 .block-card {
     display: grid;
     grid-template-columns: 4.7fr 1.7fr 4.7fr;
-    grid-template-rows: repeat(1fr);
+    grid-template-rows: 1fr;
     gap: 30px;
 }
 
