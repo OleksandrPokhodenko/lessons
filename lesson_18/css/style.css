@@ -44,7 +44,7 @@ body {
     column-gap: 32px;
     row-gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    grid-template-rows: 19fr 1fr 11fr 1fr 19fr;
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 19fr));
     padding: 20px 0;
 }
 
