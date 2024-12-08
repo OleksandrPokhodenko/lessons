@@ -74,6 +74,11 @@ body {
 }
 
 .header__logo {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.header__logo span {
     color: #37447E;
     font-size: 26px;
     font-weight: 900;
@@ -82,8 +87,7 @@ body {
     text-transform: capitalize;
     transition: color 0.3s, transform 0.3s;
     will-change: transform;
-    transform: translateY(-100%);
-    opacity: 0;
+    display: inline-block;
 }
 
 .header__action {
@@ -125,7 +129,7 @@ body {
         transform: scale(1.1);
     }
 
-    .header__logo:hover {
+    .header__logo:hover span {
         transform: scale(1.1);
     }
 
