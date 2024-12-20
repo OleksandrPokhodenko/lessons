@@ -1965,6 +1965,10 @@ body {
     /* 14/16 */
 }
 
+.form-block__input:focus {
+    outline: 2px solid #A53DFF;
+}
+
 .form-block__input-row {
     display: flex;
     gap: 1.5rem;
@@ -1983,6 +1987,10 @@ body {
 
 .form-block__textarea {
     resize: vertical;
+}
+
+.form-block__textarea:focus {
+    outline: 2px solid #A53DFF;
 }
 
 .form-block__button {
