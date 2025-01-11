@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>lesson 21</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header header--position">
+            <div class="header__container">
+                <div class="header__body">
+                    <div class="header__logo logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__image" src="img/icons/logo.png"
+                                alt="StreamVibe logo with a red and white design, featuring a play button icon integrated into a circular shape">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="header__list list-nav">
+                            <li class="list-nav__item">
+                                <a href="#" class="list-nav__link">Home</a>
+                            </li>
+                            <li class="list-nav__item">
+                                <a href="#" class="list-nav__link">Movies & Shows</a>
+                            </li>
+                            <li class="list-nav__item">
+                                <a href="#" class="list-nav__link">Support</a>
+                            </li>
+                            <li class="list-nav__item">
+                                <a href="#" class="list-nav__link">Subscriptions</a>
+                            </li>
+                            <li id="search" class="list-nav__item">
+                                <a href="#" class="list-nav__link">Search</a>
+                            </li>
+                            <li id="subscribe" class="list-nav__item">
+                                <a href="#" class="list-nav__link">Subscribe</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__action action-buttons">
+                        <button type="button" aria-label="open search button" class="action-buttons__button">
+                            <img src="img/icons/search.svg" alt="search icon">
+                        </button>
+                        <button type="button" aria-label="subscribe button" class="action-buttons__button">
+                            <img src="img/icons/subscribe.svg" alt="subscribe icon">
+                        </button>
+                        <button type="button" aria-label="open menu button"
+                            class="action-buttons__open-menu-button menu-open">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__wrapper page__wrapper--hero">
+                    <section class="hero-section hero-section--position">
+                        <div class="hero-section__img">
+                            <img srcset="img/hero-05x.webp 05x, img/hero-2x.webp 2x, img/hero-3x.webp 3x"
+                                src="img/hero.webp"
+                                alt="An image of a superhero team in a poster-style composition, featuring characters in battle suits with weapons and shields, set against a vibrant background with purple and red highlights.">
+                        </div>
+                        <div class="hero-section__content">
+                            <div class="hero-section__box-title">
+                                <h1 class="hero-section__title">Avengers : Endgame</h1>
+                                <div class="hero-section__text">
+                                    <p>With the help of remaining allies, the Avengers must assemble once more in order
+                                        to
+                                        undo Thanos's actions and undo the chaos to the universe, no matter what
+                                        consequences may be in store, and no matter who they face... Avenge the fallen.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-section__buttons-block block-buttons">
+                                <button type="button" class="button button--hero">Play
+                                    Now</button>
+                                <ul class="block-buttons__body">
+                                    <li class="block-buttons__item">
+                                        <button type="button" class="block-buttons__button button-dark"
+                                            aria-label="add video button">
+                                            <img src="img/icons/plus.png" alt="plus icon">
+                                        </button>
+                                    </li>
+                                    <li class="block-buttons__item">
+                                        <button type="button" class="block-buttons__button button-dark"
+                                            aria-label="like button">
+                                            <img src="img/icons/like.svg" alt="like icon">
+                                        </button>
+                                    </li>
+                                    <li class="block-buttons__item">
+                                        <button type="button" class="block-buttons__button button-dark"
+                                            aria-label="microphone mute button">
+                                            <img src="img/icons/microphone.svg" alt="microphone icon">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hero-section__slider slider">
+                            <button type="button" class="slider__left button-dark" aria-label="button left">
+                                <img src="img/icons/arrow.svg" alt="arrow left icon">
+                            </button>
+                            <ul class="slider__lines">
+                                <li class="slider__line slider__line--hero"><span></span></li>
+                                <li class="slider__line slider__line--hero"><span></span></li>
+                                <li class="slider__line slider__line--hero"><span></span></li>
+                                <li class="slider__line slider__line--hero"><span></span></li>
+                            </ul>
+                            <button type="button" class="slider__right button-dark" aria-label="button right">
+                                <img src="img/icons/arrow.svg" alt="arrow right icon">
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="page__wrapper page__wrapper--border-yes">
+                    <div class="movies-and-shows-block">
+                        <button type="button" class="movies-and-shows-block__button"
+                            aria-label="movies button">Movies</button>
+                        <button type="button" class="movies-and-shows-block__button"
+                            aria-label="shows button">Shows</button>
+                    </div>
+                </div>
+                <div id="page-margin" class="page__wrapper page__wrapper--border-none">
+                    <section class="page__our-genres-section section-movies">
+                        <button type="button" class="section-movies__button button">Movies</button>
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Our Genres</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards">
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Action</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Adventure</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Comedy</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Drama</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Horror</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__popular-top-10-in-genres-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Popular Top 10 In Genres</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards">
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Action</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Adventure</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Comedy</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Drama</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__trending-now-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Trending Now</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/trending-now/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 30min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/eye.svg" alt="eye icon">
+                                            </div>
+                                            <div>2K</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/trending-now/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 57min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/eye.svg" alt="eye icon">
+                                            </div>
+                                            <div>1.5K</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/trending-now/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>2h 10min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/eye.svg" alt="eye icon">
+                                            </div>
+                                            <div>1.8K</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/trending-now/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>2h 20min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/eye.svg" alt="eye icon">
+                                            </div>
+                                            <div>3K</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/trending-now/5.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 42min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/eye.svg" alt="eye icon">
+                                            </div>
+                                            <div>5K</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__new-releases-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">New Releases</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/new-releases/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info cards__info--block">
+                                        <div class="additional">
+                                            <div class="additional__date">Released at 14 April 2023</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/new-releases/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info cards__info--block">
+                                        <div class="additional">
+                                            <div class="additional__date">Released at 22 April 2023</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/new-releases/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info cards__info--block">
+                                        <div class="additional">
+                                            <div class="additional__date">Released at 13 April 2023</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/new-releases/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info cards__info--block">
+                                        <div class="additional">
+                                            <div class="additional__date">Released at 19 April 2023</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--five-cards-with-one-img">
+                                            <img src="img/new-releases/5.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info cards__info--block">
+                                        <div class="additional">
+                                            <div class="additional__date">Released at 11 April 2023</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__must-watch-movies-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Must - Watch Movies</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-movies/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 57min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__half-star">
+                                                        <img src="img/icons/star-half-red.svg" alt="half star red icon">
+                                                        <img src="img/icons/star-half-grey.svg"
+                                                            alt="half star grey icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">20K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-movies/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 30min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-grey.svg" alt="grey star icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">20K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-movies/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 42min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__half-star">
+                                                        <img src="img/icons/star-half-red.svg" alt="half star red icon">
+                                                        <img src="img/icons/star-half-grey.svg"
+                                                            alt="half star grey icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">20K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-movies/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>2h 10min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-grey.svg" alt="grey star icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">20K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="page__wrapper page__wrapper--border-none page__wrapper--shows">
+                    <section class="page__our-genres-section section-movies">
+                        <button type="button" class="section-movies__button button">Shows</button>
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Our Genres</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards">
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/action/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                        <div class="cards__info">
+                                            <div class="cards__block-title">
+                                                <h3 class="cards__title">Action</h3>
+                                            </div>
+                                            <button class="cards__button" type="button" aria-label="Watch more movies">
+                                                <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/adventure/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Adventure</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/comedy/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Comedy</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/drama/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Drama</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale">
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie">
+                                                <img src="img/our-genres/horror/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <h3 class="cards__title">Horror</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__popular-top-10-in-genres-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Popular Top 10 In Genres</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards">
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/1-1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/2-2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/3-3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/action/4-4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Action</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/adventure/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Adventure</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/comedy/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Comedy</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="cards__body cards__body--four-multicard cards__body--padding">
+                                <article class="cards__article">
+                                    <a href="#" class="cards__link">
+                                        <ul class="cards__movies cards__movies--scale cards__movies--four-multicard">
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/1.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/2.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/3.webp" alt="Movie poster">
+                                            </li>
+                                            <li class="cards__movie cards__movie--four-multicard">
+                                                <img src="img/popular-top/drama/4.webp" alt="Movie poster">
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <div class="cards__info">
+                                        <div class="cards__block-title">
+                                            <button type="button" class="button button--four-multicard">Top 10
+                                                In</button>
+                                            <h3 class="cards__title cards__title--four-multicard">Drama</h3>
+                                        </div>
+                                        <button class="cards__button" type="button" aria-label="Watch more movies">
+                                            <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__trending-shows-now-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Trending Shows Now</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/trending-shows-now/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>8h 20min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>4 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/trending-shows-now/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>12h 23min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>5 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/trending-shows-now/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>14h 30min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>3 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/trending-shows-now/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>7h 40min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>2 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__new-released-shows-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">New Released Shows</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/new-released-shows/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>12h 23min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>5 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/new-released-shows/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>7h 40min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>2 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/new-released-shows/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>8h 20min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>4 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-cards-with-one-smallest-img">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-smallest-img">
+                                            <img src="img/new-released-shows/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>10h 30min</div>
+                                        </div>
+                                        <div class="additional additional--views">
+                                            <div class="additional__image">
+                                                <img src="img/icons/seasons.svg" alt="eye icon">
+                                            </div>
+                                            <div>3 Season</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="page__must-watch-shows-section section-movies">
+                        <div class="section-movies__header">
+                            <h2 class="section-movies__title">Must - Watch Shows</h2>
+                            <div class="section-movies__slider slider slider--dark">
+                                <button type="button" class="slider__left button-dark button-dark--our-genres-section"
+                                    aria-label="button left">
+                                    <img src="img/icons/arrow.svg" alt="arrow left icon">
+                                </button>
+                                <ul class="slider__lines">
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                    <li class="slider__line"><span></span></li>
+                                </ul>
+                                <button type="button" class="slider__right button-dark button-dark--our-genres-section"
+                                    aria-label="button right">
+                                    <img src="img/icons/arrow.svg" alt="arrow right icon">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="section-movies__content cards cards--litle-gap">
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-shows/1.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>7h 40min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__half-star">
+                                                        <img src="img/icons/star-half-red.svg" alt="half star red icon">
+                                                        <img src="img/icons/star-half-grey.svg"
+                                                            alt="half star grey icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">12K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-shows/2.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 30min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">28K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-shows/3.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>1h 42min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-grey.svg" alt="grey star icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">2K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cards__body cards__body--four-card">
+                                <a href="#" class="cards__link cards__link--litle-padding">
+                                    <div class="cards__movies cards__movies--not-gradient">
+                                        <div class="cards__movie cards__movie--four-cards-with-one-img">
+                                            <img src="img/must-watch-shows/4.webp" alt="Movie poster">
+                                        </div>
+                                    </div>
+                                    <div class="cards__info">
+                                        <div class="additional">
+                                            <div class="additional__image">
+                                                <img src="img/icons/clock.svg" alt="clock icon">
+                                            </div>
+                                            <div>8h 20min</div>
+                                        </div>
+                                        <div class="additional additional--stars-padding">
+                                            <div class="additional__stars">
+                                                <ul class="additional__body-stars">
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <il class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </il>
+                                                    <li class="additional__star">
+                                                        <img src="img/icons/star-red.svg" alt="red star icon">
+                                                    </li>
+                                                    <li class="additional__half-star">
+                                                        <img src="img/icons/star-half-red.svg" alt="half star red icon">
+                                                        <img src="img/icons/star-half-grey.svg"
+                                                            alt="half star grey icon">
+                                                    </li>
+                                                </ul>
+                                                <div class="additional__likes">32K</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="page__wrapper page__wrapper--overflow">
+                    <section class="free-trial-section free-trial-section--position">
+                        <div class="free-trial-section__image">
+                            <img src="img/container.webp"
+                                alt="A collage of vibrant movie and TV show posters on a dark background, featuring superhero, action, and sci-fi genres.">
+                        </div>
+                        <div class="free-trial-section__content">
+                            <h2 class="free-trial-section__title">Start your free trial today!</h2>
+                            <div class="free-trial-section__text">
+                                <p>This is a clear and concise call to action that encourages users to sign up for a
+                                    free trial of StreamVibe.</p>
+                            </div>
+                        </div>
+                        <div class="free-trial-section__box-button">
+                            <button type="button" class="free-trial-section__button button">Start a Free Trail</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <ul class="footer__blocks">
+                        <li class="footer__block">
+                            <h3 class="footer__title">Home</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Categories</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Devices</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Pricing</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__block">
+                            <h4 class="footer__title">Movies</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Gernes</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Trending</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">New Release</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Popular</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__block">
+                            <h4 class="footer__title">Shows</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Gernes</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Trending</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">New Release</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Popular</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__block">
+                            <h4 class="footer__title">Support</h4>
+                            <div class="footer__list">
+                                <div class="footer__item">
+                                    <a class="footer__link" href="#">Contact Us</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer__block">
+                            <h4 class="footer__title">Subscription</h4>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Plans</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="#">Features</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__block">
+                            <h4 class="footer__title">Connect With Us</h4>
+                            <address>
+                                <ul class="footer__list footer__list--icons">
+                                    <li class="footer__item footer__item--icon">
+                                        <a class="footer__link footer__link--icon button-dark button-dark--our-genres-section"
+                                            href="#" aria-label="go to facebook profile">
+                                            <img src="img/icons/facebook.svg" alt="facebook icon">
+                                        </a>
+                                    </li>
+                                    <li class="footer__item footer__item--icon">
+                                        <a class="footer__link footer__link--icon button-dark button-dark--our-genres-section"
+                                            href="#" aria-label="go to twitter profile">
+                                            <img src="img/icons/twitter.svg" alt="twitter icon">
+                                        </a>
+                                    </li>
+                                    <li class="footer__item footer__item--icon">
+                                        <a class="footer__link footer__link--icon button-dark button-dark--our-genres-section"
+                                            href="#" aria-label="go to linkedin profile">
+                                            <img src="img/icons/linkedin.svg" alt="linkedin icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copy">@2023 streamvib, All Rights Reserved</div>
+                    <div class="footer__privacy privacy">
+                        <ul class="privacy__list">
+                            <li class="privacy__item">
+                                <a class="privacy__link" href="#">Terms of Use</a>
+                            </li>
+                            <li class="privacy__item">
+                                <a class="privacy__link" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="privacy__item">
+                                <a class="privacy__link" href="#">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
