@@ -216,14 +216,15 @@ body {
             width: toRem(16);
         }
 
+        &--active span {
+            width: toRem(23);
+            background-color: $backgroundButtonColor;
+        }
+
         @media(any-hover: hover) {
-            &:hover span {
+            &:hover:not(.slider__line--hero) span {
                 width: clamp(1.125rem, -0.024rem + 1.44vw, 1.438rem);
                 background-color: $backgroundButtonColor;
-            }
-
-            &--hero:hover span {
-                width: toRem(23);
             }
 
         }

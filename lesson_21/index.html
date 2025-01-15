@@ -63,9 +63,8 @@
                 <div class="page__wrapper page__wrapper--hero">
                     <section class="hero-section hero-section--position">
                         <div class="hero-section__img">
-                            <img srcset="img/hero-05x.webp 05x, img/hero-2x.webp 2x, img/hero-3x.webp 3x"
-                                src="img/hero.webp"
-                                alt="An image of a superhero team in a poster-style composition, featuring characters in battle suits with weapons and shields, set against a vibrant background with purple and red highlights.">
+                            <img id="hero-img" value="0" src="img/hero.webp"
+                                alt="Poster of Marvel's Avengers showcasing the main heroes in a vibrant action pose.">
                         </div>
                         <div class="hero-section__content">
                             <div class="hero-section__box-title">
@@ -104,16 +103,19 @@
                             </div>
                         </div>
                         <div class="hero-section__slider slider">
-                            <button type="button" class="slider__left button-dark" aria-label="button left">
+                            <button id="btn-left" type="button" class="slider__left button-dark"
+                                aria-label="button left">
                                 <img src="img/icons/arrow.svg" alt="arrow left icon">
                             </button>
                             <ul class="slider__lines">
-                                <li class="slider__line slider__line--hero"><span></span></li>
+                                <li class="slider__line slider__line--hero slider__line--active"><span></span>
+                                </li>
                                 <li class="slider__line slider__line--hero"><span></span></li>
                                 <li class="slider__line slider__line--hero"><span></span></li>
                                 <li class="slider__line slider__line--hero"><span></span></li>
                             </ul>
-                            <button type="button" class="slider__right button-dark" aria-label="button right">
+                            <button id="btn-right" type="button" class="slider__right button-dark"
+                                aria-label="button right">
                                 <img src="img/icons/arrow.svg" alt="arrow right icon">
                             </button>
                         </div>

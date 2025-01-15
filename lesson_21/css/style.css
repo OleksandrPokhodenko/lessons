@@ -205,13 +205,14 @@ body {
 .slider__line--hero span {
   width: 1rem;
 }
+.slider__line--active span {
+  width: 1.4375rem;
+  background-color: #E50000;
+}
 @media (any-hover: hover) {
-  .slider__line:hover span {
+  .slider__line:hover:not(.slider__line--hero) span {
     width: clamp(1.125rem, -0.024rem + 1.44vw, 1.438rem);
     background-color: #E50000;
-  }
-  .slider__line--hero:hover span {
-    width: 1.4375rem;
   }
 }
 .slider__right {
