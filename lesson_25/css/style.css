@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+[class*=__container] {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: 0.9375rem;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  background-color: rgb(77, 77, 155);
+  font-size: 1.125rem;
+  color: black;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper--position {
+  position: relative;
+}
+.wrapper main {
+  flex-grow: 1;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-block: 1.25rem;
+}
+.header--position {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100wv;
+  min-height: 4.375rem;
+  background-color: rgb(77, 77, 155);
+}
+.page__box {
+  padding-block: 1.25rem;
+}
+.page__counter {
+  text-align: center;
+  padding-block: 1.25rem;
+}
+
+.item {
+  padding: 0.625rem 2.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0.0625rem solid #000;
+  border-radius: 0.625rem;
+  transition: background-color 0.3s;
+}
+.item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.active {
+  background-color: rgb(121, 121, 208);
+}
+
+.number-item {
+  padding-block: 1.25rem;
+  display: inline-block;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.625rem;
+  padding-inline: 3.125rem;
+  padding-block: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-block: 1.25rem;
+  transition: background-color 0.5s;
+}

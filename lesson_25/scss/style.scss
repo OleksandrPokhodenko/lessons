@@ -1,0 +1,115 @@
+@use "sass:math";
+
+@import"_reset.scss";
+
+@import"_fonts.scss";
+
+@import"_mixins.scss";
+
+
+[class*="__container"] {
+    max-width: toRem(1200);
+    margin: 0 auto;
+    padding-inline: toRem(15);
+}
+
+body {
+    font-family: Manrope, sans-serif;
+    background-color: rgb(77, 77, 155);
+    font-size: toRem(18);
+    color: black;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+
+    // .wrapper--position
+    &--position {
+        position: relative;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+}
+
+.header {
+    font-size: toRem(24);
+    text-align: center;
+    padding-block: toRem(20);
+
+    // .header--position
+    &--position {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100wv;
+        min-height: toRem(70);
+        background-color: rgb(77, 77, 155);
+    }
+
+    // .header__container
+    &__container {}
+}
+
+.page {
+
+    // .page__container
+    &__container {}
+
+    // .page__box
+    &__box {
+        padding-block: toRem(20);
+    }
+
+    //.page__counter
+    &__counter {
+        text-align: center;
+        padding-block: toRem(20);
+    }
+}
+
+.item {
+    padding: toRem(10) toRem(40);
+    width: fit-content;
+    border: toRem(1) solid #000;
+    border-radius: toRem(10);
+    transition: background-color 0.3s;
+
+    &:not(:last-child) {
+        margin-bottom: toRem(10);
+    }
+}
+
+.active {
+    background-color: rgb(121, 121, 208);
+}
+
+.number-item {
+    padding-block: toRem(20);
+    display: inline-block;
+    border: toRem(1) solid #fff;
+    border-radius: toRem(10);
+    padding-inline: toRem(50);
+    padding-block: toRem(20);
+    font-size: toRem(24);
+    font-weight: 700;
+}
+
+.footer {
+    font-size: toRem(24);
+    text-align: center;
+    padding-block: toRem(20);
+    transition: background-color 0.5s;
+    // .footer__container
+
+    &__container {}
+}
