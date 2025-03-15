@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>lesson 20</title>
@@ -19,22 +20,22 @@
                         <nav>
                             <ul class="content-header__list">
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">Home</a>
+                                    <a href="#hero-id" class="content-header__link">Home</a>
                                 </li>
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">About</a>
+                                    <a href="#about-id" class="content-header__link">About</a>
                                 </li>
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">Process</a>
+                                    <a href="#process-id" class="content-header__link">Process</a>
                                 </li>
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">Portfolio</a>
+                                    <a href="#portfolio-id" class="content-header__link">Portfolio</a>
                                 </li>
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">Blog</a>
+                                    <a href="#blog-id" class="content-header__link">Blog</a>
                                 </li>
                                 <li class="content-header__item">
-                                    <a href="#" class="content-header__link">Services</a>
+                                    <a href="#services-id" class="content-header__link">Services</a>
                                 </li>
                             </ul>
                         </nav>
@@ -48,7 +49,7 @@
             </div>
         </header>
         <main class="page">
-            <section class="hero-section">
+            <section id="hero-id" class="hero-section">
                 <div class="hero-section__container">
                     <div class="hero-section__body">
                         <div class="hero-section__header header-block">
@@ -62,7 +63,7 @@
                                     user-centric
                                     design.</p>
                             </div>
-                            <a target="_blank" href="#" class="header-block__button button">Say Hello!</a>
+                            <a href="#contact-id" class="header-block__button button">Say Hello!</a>
                         </div>
                         <div class="hero-section__experience experience-block">
                             <div class="experience-block__body">
@@ -71,7 +72,7 @@
                             </div>
                             <div class="experience-block__body">
                                 <div class="experience-block__title">250+</div>
-                                <div class="experience-block__subtitle">Project Completed</div>
+                                <div class="experience-block__subtitle">лroject Completed</div>
                             </div>
                             <div class="experience-block__body">
                                 <div class="experience-block__title">58</div>
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about-me-section">
+            <section id="about-id" class="about-me-section">
                 <div class="about-me-section__container">
                     <div class="about-me-section__body">
                         <div class="about-me-section__header header-block">
@@ -107,8 +108,7 @@
                         </div>
                         <div class="about-me-section__box">
                             <div class="about-me-section__img">
-                                <img src="img/man-small.webp"
-                                    alt="A man in a light jacket with a smile, crossing his arms over his chest">
+                                <img src="img/man-small.webp" alt="A man">
                             </div>
                             <address class="about-me-section__social social">
                                 <a target="_blank" href="#" class="social__link" aria-label="open facebook profile">
@@ -120,9 +120,8 @@
                                 <a target="_blank" href="#" class="social__link" aria-label="open instagram profile">
                                     <img src="img/icons/instagram.svg" alt="instagram violet icon">
                                 </a>
-                                <a target="_blank" href="#" class="social__link social__link--violet"
-                                    aria-label="open linkedin profile">
-                                    <img src="img/icons/linkedin-white-icon.svg" alt="linkedin white icon">
+                                <a target="_blank" href="#" class="social__link" aria-label="open linkedin profile">
+                                    <img src="img/icons/linkedin-violet-icon.svg" alt="linkedin white icon">
                                 </a>
                                 <a target="_blank" href="#" class="social__link" aria-label="open be profile">
                                     <img src="img/icons/be.svg" alt="be violet icon">
@@ -132,7 +131,7 @@
                     </div>
                 </div>
             </section>
-            <section class="work-process-section">
+            <section id="process-id" class="work-process-section">
                 <div class="work-process-section__container">
                     <div class="work-process-section__body">
                         <div class="work-process-section__header header-block">
@@ -147,11 +146,10 @@
                         </div>
                         <div class="work-process-section__articles article-work-process-section">
                             <article class="article-work-process-section__body">
-                                <div
-                                    class="article-work-process-section__icon article-work-process-section__icon--violet">
+                                <div class="article-work-process-section__icon">
                                     <img src="img/icons/notes.svg" alt="notes icon">
                                 </div>
-                                <h3 class="article-work-process-section__title">1. Research</h3>
+                                <h3 class="article-work-process-section__title"> Research</h3>
                                 <div class="article-work-process-section__info">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
                                 </div>
@@ -160,7 +158,7 @@
                                 <div class="article-work-process-section__icon">
                                     <img src="img/icons/growth-graph.svg" alt="growth graph icon">
                                 </div>
-                                <h3 class="article-work-process-section__title">2. Analyze</h3>
+                                <h3 class="article-work-process-section__title"> Analyze</h3>
                                 <div class="article-work-process-section__info">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
                                 </div>
@@ -169,7 +167,7 @@
                                 <div class="article-work-process-section__icon">
                                     <img src="img/icons/pencil.svg" alt="pencil icon">
                                 </div>
-                                <h3 class="article-work-process-section__title">3. Design</h3>
+                                <h3 class="article-work-process-section__title"> Design</h3>
                                 <div class="article-work-process-section__info">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
                                 </div>
@@ -178,7 +176,7 @@
                                 <div class="article-work-process-section__icon">
                                     <img src="img/icons/computer.svg" alt="computer icon">
                                 </div>
-                                <h3 class="article-work-process-section__title">4. Launch</h3>
+                                <h3 class="article-work-process-section__title"> Launch</h3>
                                 <div class="article-work-process-section__info">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
                                 </div>
@@ -187,7 +185,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio-section">
+            <section id="portfolio-id" class="portfolio-section">
                 <div class="portfolio-section__container">
                     <div class="portfolio-section__header header-block header-block--center">
                         <h2 class="header-block__title">Portfolio</h2>
@@ -199,7 +197,7 @@
                     <div class="portfolio-section__body">
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/red-background.webp"
+                                <img src="img/portfolio/red-background.webp"
                                     alt="Abstract image with flowing red and pink wavy lines on a light background.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -215,7 +213,7 @@
                         </article>
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/black-background.webp"
+                                <img src="img/portfolio/black-background.webp"
                                     alt="A triangular building peak against a dark night sky with faint stars.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -231,7 +229,7 @@
                         </article>
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/computer-background.webp"
+                                <img src="img/portfolio/computer-background.webp"
                                     alt=" Laptop with code on screen on white desktop.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -247,7 +245,7 @@
                         </article>
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/table-background.webp"
+                                <img src="img/portfolio/table-background.webp"
                                     alt="A large meeting room with a meeting table surrounded by office chairs, with panoramic windows in the background.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -263,7 +261,7 @@
                         </article>
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/avocado-background.webp"
+                                <img src="img/portfolio/avocado-background.webp"
                                     alt="A cute plush toy shaped like a smiling avocado against a green wall and yellow surface.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -279,7 +277,7 @@
                         </article>
                         <article class="portfolio-section__article article-portfolio-section">
                             <a target="_blank" href="#" class="article-portfolio-section__link">
-                                <img src="img/lavanda-background.webp"
+                                <img src="img/portfolio/lavanda-background.webp"
                                     alt="Delicate lavender flowers against a soft, blurred background.">
                             </a>
                             <div class="article-portfolio-section__box">
@@ -307,14 +305,14 @@
                                 but the majority have suffered alteration.</p>
                         </div>
                         <div class="header-block__buttons">
-                            <a target="_blank" href="#"
-                                class="header-block__button button button--project-idea-section">Let’s work
+                            <a href="#contact-id" class="header-block__button button button--project-idea-section">Let’s
+                                work
                                 Together</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="blog-section">
+            <section id="blog-id" class="blog-section">
                 <div class="blog-section__container">
                     <div class="blog-section__header header-block header-block--center">
                         <h2 class="header-block__title">Blog</h2>
@@ -323,72 +321,182 @@
                                 but the majority have suffered alteration.</p>
                         </div>
                     </div>
-                    <div class="blog-section__body">
-                        <a target="_blank" href="#" class="blog-section__card card-blog-section">
-                            <div class="card-blog-section__img">
-                                <img src="img/mount-background.webp"
-                                    alt="Starry night sky over majestic mountains with a visible shooting star.">
-                            </div>
-                            <div class="card-blog-section__box">
-                                <div class="card-blog-section__date">
-                                    <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                    <div class="blog-section__swiper swiper">
+                        <div class="blog-section__swiper-wrapper swiper-wrapper">
+                            <a class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/1.webp"
+                                        alt="Starry night sky over majestic mountains with a visible shooting star.">
                                 </div>
-                                <div class="card-blog-section__text">
-                                    <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="blog-section__card card-blog-section">
-                            <div class="card-blog-section__img">
-                                <img src="img/yellow-background.webp"
-                                    alt="Yellow weathered surface with black markings and paint wear, creating an abstract pattern.">
-                            </div>
-                            <div class="card-blog-section__box">
-                                <div class="card-blog-section__date">
-                                    <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/2.webp"
+                                        alt="Yellow weathered surface with black markings and paint wear, creating an abstract pattern.">
                                 </div>
-                                <div class="card-blog-section__text">
-                                    <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="blog-section__card card-blog-section">
-                            <div class="card-blog-section__img">
-                                <img src="img/colors-background.webp"
-                                    alt="A colorful gradient blending shades of green, yellow, red, and blue.">
-                            </div>
-                            <div class="card-blog-section__box">
-                                <div class="card-blog-section__date">
-                                    <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/3.webp"
+                                        alt="A colorful gradient blending shades of green, yellow, red, and blue.">
                                 </div>
-                                <div class="card-blog-section__text">
-                                    <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="blog-section__card card-blog-section">
-                            <div class="card-blog-section__img">
-                                <img src="img/roof-background.webp"
-                                    alt="Modern architecture featuring angular glass panels reflecting the sky.">
-                            </div>
-                            <div class="card-blog-section__box">
-                                <div class="card-blog-section__date">
-                                    <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/4.webp"
+                                        alt="Modern architecture featuring angular glass panels reflecting the sky.">
                                 </div>
-                                <div class="card-blog-section__text">
-                                    <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                            <a class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/5.webp"
+                                        alt="Starry night sky over majestic mountains with a visible shooting star.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/6.webp"
+                                        alt="Yellow weathered surface with black markings and paint wear, creating an abstract pattern.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/7.webp"
+                                        alt="A colorful gradient blending shades of green, yellow, red, and blue.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/8.webp"
+                                        alt="Modern architecture featuring angular glass panels reflecting the sky.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/9.webp"
+                                        alt="Starry night sky over majestic mountains with a visible shooting star.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/10.webp"
+                                        alt="Yellow weathered surface with black markings and paint wear, creating an abstract pattern.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/11.webp"
+                                        alt="A colorful gradient blending shades of green, yellow, red, and blue.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a target="_blank" href="#" class="blog-section__card card-blog-section swiper-slide">
+                                <div class="card-blog-section__img">
+                                    <img src="img/testimonial/12.webp"
+                                        alt="Modern architecture featuring angular glass panels reflecting the sky.">
+                                </div>
+                                <div class="card-blog-section__box">
+                                    <div class="card-blog-section__date">
+                                        <time datetime="2020-10-22">22 Oct, 2020</time> / 246 Comments
+                                    </div>
+                                    <div class="card-blog-section__text">
+                                        <p>Lorem ipsum dolor sit consea. Nulla purus arcu</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="blog-section__slider slider">
-                        <div class="slider__line"></div>
-                        <div class="slider__dotted"></div>
-                        <div class="slider__dotted"></div>
-                    </div>
+                    <div class="blog-section__bullets bullets swiper-pagination"></div>
                 </div>
             </section>
-            <section class="what-i-do-section">
+            <section id="services-id" class="what-i-do-section">
                 <div class="what-i-do-section__container">
                     <div class="what-i-do-section__header header-block">
                         <h2 class="header-block__title header-block__title-grey">What I do?</h2>
@@ -400,7 +508,7 @@
                                 velit non.</p>
                         </div>
                         <div class="header-block__buttons">
-                            <a target="_blank" href="#" class="header-block__button button">Say Hello!</a>
+                            <a href="#contact-id" class="header-block__button button">Say Hello!</a>
                         </div>
                     </div>
                     <div class="what-i-do-section__box">
@@ -446,44 +554,84 @@
                                 but the majority have suffered alteration.</p>
                         </div>
                     </div>
-                    <ul class="happy-clients-section__social">
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to google profile">
-                                <img src="img/icons/google.svg" alt="google icon">
-                            </a>
-                        </li>
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to dribbble profile">
-                                <img src="img/icons/dribbble.svg" alt="dribbble icon">
-                            </a>
-                        </li>
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to linkedin profile">
-                                <img src="img/icons/linkedin.svg" alt="linkedin icon">
-                            </a>
-                        </li>
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to amazon profile">
-                                <img src="img/icons/amazon.svg" alt="amazon icon">
-                            </a>
-                        </li>
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to medium profile">
-                                <img src="img/icons/medium.svg" alt="medium icon">
-                            </a>
-                        </li>
-                        <li class="happy-clients-section__item">
-                            <a target="_blank" href="#" class="happy-clients-section__link"
-                                aria-label="go to spotify profile">
-                                <img src="img/icons/spotify.svg" alt="spotify icon">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="happy-clients-section__box">
+                        <ul class="happy-clients-section__social">
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to google profile">
+                                    <img src="img/icons/google.avif" alt="google icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to dribbble profile">
+                                    <img src="img/icons/dribbble.avif" alt="dribbble icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to linkedin profile">
+                                    <img src="img/icons/linkedin.avif" alt="linkedin icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to amazon profile">
+                                    <img src="img/icons/amazon.avif" alt="amazon icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to medium profile">
+                                    <img src="img/icons/medium.avif" alt="medium icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to spotify profile">
+                                    <img src="img/icons/spotify.avif" alt="spotify icon">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="happy-clients-section__social">
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to google profile">
+                                    <img src="img/icons/google.avif" alt="google icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to dribbble profile">
+                                    <img src="img/icons/dribbble.avif" alt="dribbble icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to linkedin profile">
+                                    <img src="img/icons/linkedin.avif" alt="linkedin icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to amazon profile">
+                                    <img src="img/icons/amazon.avif" alt="amazon icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to medium profile">
+                                    <img src="img/icons/medium.avif" alt="medium icon">
+                                </a>
+                            </li>
+                            <li class="happy-clients-section__item">
+                                <a target="_blank" href="#" class="happy-clients-section__link"
+                                    aria-label="go to spotify profile">
+                                    <img src="img/icons/spotify.avif" alt="spotify icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="testimonial-section">
@@ -495,23 +643,45 @@
                                 but the majority have suffered alteration.</p>
                         </div>
                     </div>
-                    <div class="testimonial-section__text">
-                        <p>“Nulla efficitur nisl sit amet velit malesuada dapibus. Duis mollis felis turpis, nec semper
-                            odio convallis at. Curabitur imperdiet semper arcu, a finibus arcu suscipit in. Donec quis
-                            placerat nibh. Maecenas est purus, eleifend ac cursus sed, tincidunt ut sapien.
-                            Morbi ornare elit at libero suscipit porta.”</p>
+                    <div class="testimonial-section__swiper swiper">
+                        <div class="testimonial-section__swiper-wrapper swiper-wrapper">
+                            <div class="testimonial-section__slide swiper-slide">
+                                <div class="testimonial-section__text">
+                                    <q>Nothing is more effective than a well-placed approach. Softness is often found in
+                                        the most challenging situations. The structure of the approach is essential for
+                                        achieving the desired outcome. Always seek the right balance. The essence of a
+                                        good strategy lies in its simplicity and clarity.</q>
+                                </div>
+                                <div class="testimonial-section__name">Esther Howard</div>
+                                <div class="testimonial-section__profession">Managing Director, ABC company</div>
+                            </div>
+                            <div class="testimonial-section__slide swiper-slide">
+                                <div class="testimonial-section__text">
+                                    <q>True strength lies in equilibrium. Too much gentleness may invite uncertainty,
+                                        while excessive force breeds resistance. Harmony is the key to stability. Seek
+                                        balance in all things, for the road we walk is shaped by our choices.</q>
+                                </div>
+                                <div class="testimonial-section__name">Elena Carter</div>
+                                <div class="testimonial-section__profession">Senior Researcher, Behavioral Dynamics
+                                    Research Institute</div>
+                            </div>
+                            <div class="testimonial-section__slide swiper-slide">
+                                <div class="testimonial-section__text">
+                                    <q>Success is never found in extremes. A lack of firmness weakens resolve, while
+                                        unrelenting force erodes foundations. The art of life is in maintaining the
+                                        right proportion. Every step matters on the path to fulfillment.</q>
+                                </div>
+                                <div class="testimonial-section__name">Dr. Samuel Whitmore</div>
+                                <div class="testimonial-section__profession">Director, Center for Applied Psychology &
+                                    Leadership</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-section__name">Esther Howard</div>
-                    <div class="testimonial-section__profession">Managing Director, ABC company</div>
-                    <div class="testimonial-section__slider slider">
-                        <div class="slider__line"></div>
-                        <div class="slider__dotted"></div>
-                        <div class="slider__dotted"></div>
-                    </div>
+                    <div class="testimonial-section__bullets bullets swiper-pagination"></div>
                 </div>
             </section>
             <div class="discuss-section">
-                <div class="discuss-section__container">
+                <div id="contact-id" class="discuss-section__container">
                     <div class="discuss-section__body">
                         <div class="discuss-section__contacts-card card-contacts">
                             <div class="card-contacts__header header-block">
@@ -545,9 +715,8 @@
                                 </a>
                             </address>
                             <address class="card-contacts__social social">
-                                <a target="_blank" href="#" class="social__link social__link--violet"
-                                    aria-label="open facebook profile">
-                                    <img src="img/icons/facebook-white.svg" alt="facebook violet icon">
+                                <a target="_blank" href="#" class="social__link" aria-label="open facebook profile">
+                                    <img src="img/icons/facebook-violet.svg" alt="facebook violet icon">
                                 </a>
                                 <a target="_blank" href="#" class="social__link" aria-label="open ball profile">
                                     <img src="img/icons/ball.svg" alt="ball violet icon">
@@ -573,32 +742,34 @@
                                 <div class="form-block__input-block">
                                     <div class="form-block__input-box">
                                         <input id="name" class="form-block__input" name="form[]" required type="text"
-                                            placeholder="Name*">
+                                            aria-label="username" placeholder="Name*">
                                     </div>
                                     <div class="form-block__input-box">
                                         <input id="email-light" class="form-block__input" name="form[]" required
-                                            type="email" placeholder="Email*">
+                                            aria-label="email" type="email" placeholder="Email*">
                                     </div>
                                     <div class="form-block__input-box">
-                                        <input id="location" class="form-block__input" name="form[]" type="text"
-                                            placeholder="Location">
+                                        <input id="location" class="form-block__input" name="form[]"
+                                            aria-label="location" type="text" placeholder="Location">
                                     </div>
                                     <div class="form-block__input-row">
                                         <div class="form-block__input-box form-block__input-box--budget">
                                             <input id="budget" class="form-block__input" name="form[]" required
-                                                type="text" placeholder="Budget*">
+                                                aria-label="budget" type="text" placeholder="Budget*">
                                         </div>
                                         <div class="form-block__input-box form-block__input-box--subject">
                                             <input id="subject" class="form-block__input" name="form[]" required
-                                                type="text" placeholder="Subject*">
+                                                aria-label="subject" type="text" placeholder="Subject*">
                                         </div>
                                     </div>
                                     <div class="form-block__input-box">
                                         <textarea class="form-block__textarea" name="form[]" required
-                                            placeholder="Message*"></textarea>
+                                            aria-label="Message" placeholder="Message*"></textarea>
                                     </div>
                                 </div>
-                                <a href="#" class="form-block__button button">Submit</a>
+                                <div class="form-block__submit">
+                                    <button type="submit" class="form-block__button button">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -608,29 +779,35 @@
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__body">
-                    <div class="footer__logo logo">Brooklyn</div>
+                    <a href="#hero-id">
+                        <div class="footer__logo logo">Brooklyn</div>
+                    </a>
                     <div class="footer__content content-header">
                         <ul class="content-header__list content-header__list--footer-center">
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Home</a>
+                                <a href="#hero-id" class="content-header__link content-header__link--footer">Home</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">About</a>
+                                <a href="#about-id" class="content-header__link content-header__link--footer">About</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Services</a>
+                                <a href="#services-id"
+                                    class="content-header__link content-header__link--footer">Services</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Process</a>
+                                <a href="#process-id"
+                                    class="content-header__link content-header__link--footer">Process</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Portfolio</a>
+                                <a href="#portfolio-id"
+                                    class="content-header__link content-header__link--footer">Portfolio</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Blog</a>
+                                <a href="#blog-id" class="content-header__link content-header__link--footer">Blog</a>
                             </li>
                             <li class="content-header__item">
-                                <a href="#" class="content-header__link content-header__link--footer">Contact</a>
+                                <a href="#contact-id"
+                                    class="content-header__link content-header__link--footer">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -642,6 +819,7 @@
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
